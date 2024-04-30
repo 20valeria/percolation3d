@@ -4,7 +4,7 @@ from matplotlib.animation import FuncAnimation
 
 def update_flow_3d(isOpen, isFull, n):
     updated = False
-    neighbor_offsets = np.array([(0, 0, 1), (0, 0, -1), (1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0)])  # Порядок важен для направления
+    neighbor_offsets = np.array([(0, 0, 1), (0, 0, -1), (1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0)])
 
     for i, j, k in np.ndindex(isFull.shape):
         if isFull[i, j, k]:

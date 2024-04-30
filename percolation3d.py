@@ -54,7 +54,6 @@ def optimized_flow(isOpen):
     isFull = np.zeros_like(isOpen, dtype=bool)
     queue = deque()
 
-    # Инициализируем очередь всеми ячейками в верхнем слое, которые открыты
     for j in range(n):
         for k in range(n):
             if isOpen[0, j, k]:

@@ -36,7 +36,7 @@ def draw(matrix):
     colors[2] = [0, 0, 1, 0.5]  # Синий для 2
 
 
-    # Визуализация
+
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     ax.voxels(matrix == 1, facecolors=np.broadcast_to(colors[1], matrix.shape + (4,)), edgecolors='grey')  # Белый для 1

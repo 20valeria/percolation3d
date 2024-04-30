@@ -49,7 +49,7 @@ if __name__ == "__main__":
     """
     Выполняет визуализацию адаптивной кривой, используя рекурсивную функцию curve.
     """
-    n = int(sys.argv[1])  # Получает значение n из аргументов командной строки
+    n = int(sys.argv[1])
     plt.figure(figsize=(8, 6))
     plt.gca().set_aspect('equal', adjustable='box')
     curve(n, 0.0, 0.0, 1.0, 1.0)
